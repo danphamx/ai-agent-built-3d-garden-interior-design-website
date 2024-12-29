@@ -28,6 +28,42 @@
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
         }
+
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .service-card {
+            padding: 1.5rem;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .portfolio {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .portfolio-item {
+            background-color: #f9f9f9;
+            padding: 1rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .testimonial {
+            font-style: italic;
+            margin: 2rem 0;
+            padding: 1.5rem;
+            background-color: #f9f9f9;
+            border-left: 4px solid #2d5a27;
+        }
     </style>
 </head>
 <body>
@@ -38,6 +74,48 @@
     <main>
         <h2>Welcome to Our Design Studio</h2>
         <p>We specialize in creating beautiful indoor garden spaces that bring nature into your home.</p>
+
+        <h2>Our Services</h2>
+        <div class="services">
+            <div class="service-card">
+                <h3>3D Garden Design</h3>
+                <p>Professional consultation and 3D visualization of your dream garden space.</p>
+            </div>
+            <div class="service-card">
+                <h3>Plant Selection</h3>
+                <p>Expert advice on choosing the perfect plants for your space and lifestyle.</p>
+            </div>
+            <div class="service-card">
+                <h3>Maintenance Tips</h3>
+                <p>Comprehensive guidance on keeping your indoor garden thriving.</p>
+            </div>
+            <div class="service-card">
+                <h3>Custom Solutions</h3>
+                <p>Tailored designs that match your specific needs and preferences.</p>
+            </div>
+        </div>
+
+        <h2>Portfolio</h2>
+        <div class="portfolio">
+            <div class="portfolio-item">
+                <h3>Modern Office Transformation</h3>
+                <p>A stunning before/after renovation of a corporate space.</p>
+            </div>
+            <div class="portfolio-item">
+                <h3>Residential Paradise</h3>
+                <p>Creating a peaceful garden retreat in a city apartment.</p>
+            </div>
+            <div class="portfolio-item">
+                <h3>Restaurant Ambiance</h3>
+                <p>Enhancing dining experience with natural elements.</p>
+            </div>
+        </div>
+
+        <h2>Client Testimonials</h2>
+        <div class="testimonial">
+            <p>"The team transformed our office space into a green paradise. The productivity and happiness of our employees has significantly improved."</p>
+            <p>- Sarah Johnson, CEO</p>
+        </div>
     </main>
 </body>
 </html>
